@@ -14,6 +14,7 @@ public class charmovement : MonoBehaviour {
         private float rotationY;
         private bool jump;
     private Animator animator;
+    private Camera camhor;
         void Start()
         {
         animator = GetComponent<Animator>();
@@ -53,7 +54,7 @@ public class charmovement : MonoBehaviour {
 
         animator.SetFloat("walke", 1);
 
-        if (Input.GetKey(vverh))  { vertical = 1; }
+        if (Input.GetKey(vverh))  { vertical = 1;  }
         else if (Input.GetKey(vniz)) {  vertical = -1;  }
         else { vertical = 0;   }
      
