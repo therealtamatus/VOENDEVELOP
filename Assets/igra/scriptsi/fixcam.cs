@@ -18,7 +18,7 @@ public class fixcam : MonoBehaviour {
     {
         ggerpossss = new Vector3(ggerpos.position.x, ggerpos.position.y, Camera.main.transform.position.z) ;
 
-        Debug.Log(ggerpossss.x);
+        
         transform.position = ggerpossss;
     }
     void FixedUpdate()
