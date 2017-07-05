@@ -18,7 +18,10 @@ public class vzyatoruj : MonoBehaviour {
         wepvrukah = GameObject.Find("sword");
         weponpick = false;
     }
-
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(0, 0, 100, 100), "lol");
+    }
     // Update is called once per frame
     void Update()
     {
